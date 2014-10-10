@@ -1,6 +1,6 @@
 {
   "name": "gulp-starter",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Gulp starter with common tasks and scenarios",
   "repository": {
     "type": "git",
@@ -42,6 +42,11 @@
     "require-dir": "^0.1.0",
     "vinyl-source-stream": "~0.1.1",
     "watchify": "~1.0.2"
+
+    "gulp-clean": "~0.3.1",
+    "gulp-uglify": "~1.0.1",
+    "gulp-ng-annotate": "~0.3.3",
+    "gulp-if": "~1.2.5"
   },
   "dependencies": {
     "backbone": "~1.1.2",

@@ -1,4 +1,5 @@
-var dest = "./build";
+//@changed
+var dest = "./target";
 var src = './src';
 
 module.exports = {
@@ -16,14 +17,15 @@ module.exports = {
   },
   sass: {
     src: src + "/sass/*.{sass, scss}",
-    dest: dest
+    // @changed
+    dest: dest + "/css"
   },
   images: {
     src: src + "/images/**",
     dest: dest + "/images"
   },
   markup: {
-    src: src + "/htdocs/**",
+    src: src + "/**/*.html",
     dest: dest
   },
   browserify: {
@@ -42,5 +44,15 @@ module.exports = {
       dest: dest,
       outputName: 'head.js'
     }]
+  },
+  //@changed
+  javascript: {
+	  src_module: src + "/javascript/**/module.js",
+	  src: src + "/javascript/**/*.js",
+	  dest: dest + "/javascript"
+  },
+  bower: {
+	  src: src + "/bower_components/**",
+	  dest: dest + "/bower_components"
   }
 };

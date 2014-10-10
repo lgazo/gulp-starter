@@ -1,0 +1,26 @@
+{
+  "name": "gulp-starter",
+  "version": "1.0.0",
+  "authors": [
+    "Ladislav Gazo <gazo@seges.sk>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "src/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.26",
+    "angular-animate": "~1.2.26",
+    "angular-route": "~1.2.26",
+    "jquery": "~2.1.1",
+    "animate.css": "~3.2.0",
+    "foundation": "~5.4.5",
+    "angular-foundation": "~0.3.1",
+    "angular-resource": "~1.2.26",
+    "fontawesome": "~4.2.0"
+  }
+}
