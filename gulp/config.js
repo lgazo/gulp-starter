@@ -8,8 +8,17 @@ module.exports = {
       // We're serving the src folder as well
       // for sass sourcemap linking
       baseDir: [dest, src]
-    },
-    files: [
+// multi-tenant rewrite rule
+//      ,rewrite: [
+//        {
+//          from : '^/[^/]+/(.*)$',
+//     	  to : '/$1'
+//     	}
+//      ]
+    }
+// multi-tenant default tenant URL    
+//    ,startPath: '/acme/',
+    ,files: [
       dest + "/**",
       // Exclude Map files
       "!" + dest + "/**.map"

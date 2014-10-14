@@ -85,3 +85,13 @@ This will run the `default` gulp task defined in `gulp/tasks/default.js`, which 
 
 ### Configuration
 All paths and plugin settings have been abstracted into a centralized config object in `gulp/config.js`. Adapt the paths and settings to the structure and needs of your project.
+
+### Extended version
+
+* build - contains 'javascript' task, uses 'sass-pure' without the need to install ruby env.
+* watch - watches also for javascript changes
+* bs-reload - to manually reload BrowserSync
+* bower - to copy Bower dependencies to the target directory
+* browserSync - extended with HTTP rewrite proxy which supports nginx-like rewrite rules
+
+Destination directory changed to 'target'
