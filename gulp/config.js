@@ -3,6 +3,8 @@ var dest = "./target";
 var src = './src';
 
 module.exports = {
+  src: src,
+  dest: dest,
   browserSync: {
     server: {
       // We're serving the src folder as well
