@@ -1,6 +1,12 @@
-//@changed
-var dest = "./target";
+var dest = "./build";
 var src = './src';
+
+var merge = require('object-merge');
+var override_config = {};
+try {
+    override_config = require('../../../config');
+} catch(e) {
+}
 
 module.exports = {
   src: src,
@@ -67,3 +73,5 @@ module.exports = {
 	  dest: dest + "/bower_components"
   }
 };
+
+module.exports = merge(module.exports, override_config);
